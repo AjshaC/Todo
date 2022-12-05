@@ -31,6 +31,7 @@ function AddItem() {
     const removeBtn = document.createElement("button");
 
     removeBtn.classList = "removeBtn";
+    removeBtn.innerHTML = `<i class="fa-sharp fa-solid fa-check">`;
     for (const Todos of MyTodos) {
       li.innerHTML = Todos;
       ul.append(li, removeBtn);

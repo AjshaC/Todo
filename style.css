@@ -52,6 +52,7 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
   color: whitesmoke;
+  outline: none;
 }
 
 input.shake {
@@ -132,7 +133,7 @@ input.shake {
   width: 40px;
   height: 40px;
   margin: 5px;
-  background: #45a6e35d;
+  background: #45a6e32e;
   border: 5px solid #20133c;
   border-radius: 50px;
 }
@@ -145,6 +146,12 @@ input.shake {
   width: 30px;
   height: 30px;
   transition: all 200ms linear;
+}
+
+.fa-sharp {
+  color: #45a6e3;
+  padding-top: 2px;
+  font-size: 20px;
 }
 
 .OutputContainer li {

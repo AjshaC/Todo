@@ -148,12 +148,6 @@ input.shake {
   transition: all 200ms linear;
 }
 
-.fa-sharp {
-  color: #45a6e3;
-  padding-top: 2px;
-  font-size: 20px;
-}
-
 .OutputContainer li {
   list-style: none;
   color: whitesmoke;

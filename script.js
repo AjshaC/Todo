@@ -17,7 +17,7 @@ OutputContainer.addEventListener("click", RemoveItem);
 MyTodos = [];
 
 function AddItem() {
-  if (input.value.length === 0) {
+  if ((input.value.length = 0)) {
     input.style.borderColor = " #fc2f7e";
     input.classList.add("shake");
     setTimeout(() => {
@@ -31,7 +31,7 @@ function AddItem() {
     const removeBtn = document.createElement("button");
 
     removeBtn.classList = "removeBtn";
-    removeBtn.innerHTML = `<i class="fa-sharp fa-solid fa-check">`;
+
     for (const Todos of MyTodos) {
       li.innerHTML = Todos;
       ul.append(li, removeBtn);

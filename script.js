@@ -1,6 +1,15 @@
 const input = document.querySelector("input");
 const SubmitBtn = document.querySelector("button");
 const OutputContainer = document.querySelector(".OutputContainer");
+const h1 = document.querySelector("h1");
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+
+    document.getElementById("Submit").click();
+  }
+});
 
 SubmitBtn.addEventListener("click", AddItem);
 OutputContainer.addEventListener("click", RemoveItem);
@@ -9,10 +18,14 @@ MyTodos = [];
 
 function AddItem() {
   if (input.value.length === 0) {
-    input.style.borderColor = " red";
+    input.style.borderColor = " #fc2f7e";
+    input.classList.add("shake");
+    setTimeout(() => {
+      input.classList.remove("shake");
+    }, 500);
   } else {
     MyTodos.push(input.value);
-    console.log("hek");
+
     const ul = document.createElement("ul");
     const li = document.createElement("li");
     const removeBtn = document.createElement("button");
@@ -24,7 +37,6 @@ function AddItem() {
     }
 
     LocalStorage(input.value);
-
     OutputContainer.appendChild(ul);
 
     input.value = "";

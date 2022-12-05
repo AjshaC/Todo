@@ -17,7 +17,7 @@ OutputContainer.addEventListener("click", RemoveItem);
 MyTodos = [];
 
 function AddItem() {
-  if ((input.value.length = 0)) {
+  if (input.value.length === 0) {
     input.style.borderColor = " #fc2f7e";
     input.classList.add("shake");
     setTimeout(() => {
